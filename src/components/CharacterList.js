@@ -12,7 +12,7 @@ export default function CharacterList() {
 
   const setSearchArray = someString => {
     const items = characters.filter(term =>
-      term.name.toLowerCase().includes(someString)
+      term.name.toLowerCase().includes(someString.toLowerCase())
     );
     //console.log(items);
     setCharacters(items);
